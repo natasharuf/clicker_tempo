@@ -15,6 +15,10 @@ let clicker = function(e) {
     document.getElementById("rewardA").classList.remove("hidden");
   }
 
+  if(points === 20) {
+    document.getElementById("rewardB").classList.remove("hidden");
+  }
+
   // remove class
   cookie.classList.remove("bounce");
 
