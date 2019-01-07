@@ -1,16 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>title</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="counter">0</div>
-    <div id="cookie"></div>
-    <div class="hidden reward" id="rewardA">bravo</div>
-    <div class="hidden reward" id="rewardB">WOW</div>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="main.js"></script>
-  </body>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="css/clickingspeedtest.css"/>
+
+		<title>speedometer</title>
+	</head>
+
+	<body>
+		<div id="app">
+
+			<div class="container text-center" style="padding-top: 12rem">
+				<div class="row">
+					<div class="col-sm">
+						<canvas id="gaugeCanvas" ></canvas>
+
+						<div class="clickingArea" @click="handleClick()" >
+							<h2>click me!</h2>
+						</div>
+
+						<table class="stats" style="color: white">
+							<tr>
+								<td>Total Clicks:&nbsp;&nbsp;&nbsp;&verbar;&nbsp;&nbsp;&nbsp;<b>{{ totalClicks }}</b></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="js/gauge.min.js"></script>
+		<script src="js/clickingspeedtest.js"></script>
+	</body>
+
 </html>

@@ -1,0 +1,74 @@
+
+canvas {
+	height:250px;
+	width: 350px;
+	max-width:100%;
+}
+
+.clickingArea {
+	background: #03a9f4;
+	border-radius: 55px;
+	height: 80px;
+	margin: 1.5rem auto;
+	margin-top: 10rem;
+	margin-bottom: 0.8rem;
+	padding: 1.2rem;
+	width: 250px;
+	max-width: 100%;
+}
+.clickingArea h2 {
+	color: white;
+	font-weight: bold;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+.stats {
+	background: #03a9f4;
+	border-radius: 55px;
+	height: 40px;
+	margin: 1.5rem auto;
+	margin-top: 0.3rem;
+	padding: 1.5rem;
+	width: 200px;
+	max-width: 100%;
+}
+
+
+* {
+  user-select: none;
+}
+
+#cookie {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bounce {
+  animation-duration: 200ms;
+  animation-name: bounce;
+}
+
+.hidden {
+  display: none;
+}
+
+.reward {
+  font-size: 5rem;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}

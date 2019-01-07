@@ -16,7 +16,15 @@ let clicker = function(e) {
   }
 
   if(points === 20) {
+    document.getElementById("rewardA").classList.add("hidden");
+  }
+
+  if(points === 20) {
     document.getElementById("rewardB").classList.remove("hidden");
+  }
+
+  if(points === 29) {
+    document.getElementById("rewardB").classList.add("hidden");
   }
 
   // remove class
