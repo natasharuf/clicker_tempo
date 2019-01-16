@@ -1,3 +1,11 @@
+function setup() {
+createCanvas(400, 400);
+}
+
+function draw() {
+
+}
+
 
 var gauge;
 
@@ -94,11 +102,11 @@ let clicker = function(e) {
   // set counter
   counter.innerHTML = points;
 
-  if(points === 10) {
+  if(points === 1) {
     document.getElementById("rewardA").classList.remove("hidden");
   }
 
-  if(points === 20) {
+  if(points === 19) {
     document.getElementById("rewardA").classList.add("hidden");
   }
 

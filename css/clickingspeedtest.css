@@ -1,4 +1,29 @@
 
+
+.fullscreen {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 1259px) {
+   .fullscreen {
+      background-image: url("image-980.jpg");
+   }
+}
+
+@media (min-width:1260px) {
+   .fullscreen {
+      background-image: url("image-1960.jpg");
+   }
+}
+
+
 canvas {
 	height:250px;
 	width: 350px;
@@ -37,16 +62,43 @@ canvas {
 	max-width: 100%;
 }
 
+.cookie {
+	background: #03a9f4;
+	border-radius: 55px;
+	height: 80px;
+	margin: 1.5rem auto;
+	margin-top: 10rem;
+	margin-bottom: 0.8rem;
+	padding: 1.2rem;
+	width: 250px;
+	max-width: 100%;
+}
+.cookie h2 {
+	color: white;
+	font-weight: bold;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
 
 * {
   user-select: none;
 }
 
 #cookie {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  border-radius: 50%;
+	background: #03a9f4;
+	border-radius: 55px;
+	height: 80px;
+	margin: 1.5rem auto;
+	margin-top: 10rem;
+	margin-bottom: 0.8rem;
+	padding: 1.2rem;
+	width: 250px;
+	max-width: 100%;
   cursor: pointer;
 }
 

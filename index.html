@@ -10,16 +10,18 @@
 		<title>speedometer</title>
 	</head>
 
-	<body>
+	<body class="fullscreen" style="background-image: url(images/street_background.jpg)">
 		<div id="app">
 
-			<div class="container text-center" style="padding-top: 12rem">
+			<div class="container text-center" style="padding-top: 3rem">
 				<div class="row">
 					<div class="col-sm">
 						<canvas id="gaugeCanvas" ></canvas>
 
 						<div class="clickingArea" @click="handleClick()" >
 							<h2>click me!</h2>
+							    <div id="cookie">
+							    <div class="hidden reward" id="rewardA"><h2>hopp</h2></div></div>
 						</div>
 
 						<table class="stats" style="color: white">
