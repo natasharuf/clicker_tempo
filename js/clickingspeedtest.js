@@ -3,7 +3,7 @@ createCanvas(400, 400);
 }
 
 function draw() {
-
+	background(220);
 }
 
 
@@ -47,6 +47,7 @@ $(document).ready(function(){
 	gauge.set(0); // set actual value
 });
 
+
 var app = new Vue({
 	el: '#app',
 	data: {
@@ -83,49 +84,138 @@ var app = new Vue({
 
 			this.totalClicks++;
 			this.clicksForCalc++;
+
+			document.getElementById("reward0").classList.add("hidden");
+
+			if(this.clicksForCalc === 1) {
+		    document.getElementById("rewardA").classList.remove("hidden");
+		  }
+
+		  if(this.clicksForCalc === 20) {
+		    document.getElementById("rewardA").classList.add("hidden");
+		  }
+
+		  if(this.clicksForCalc === 22) {
+		    document.getElementById("rewardB").classList.remove("hidden");
+		  }
+
+		  if(this.clicksForCalc === 50) {
+		    document.getElementById("rewardB").classList.add("hidden");
+		  }
+
+			if(this.clicksForCalc === 51) {
+				document.getElementById("rewardC").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 100) {
+				document.getElementById("rewardC").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 101) {
+				document.getElementById("rewardD").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 130) {
+				document.getElementById("rewardD").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 131) {
+				document.getElementById("rewardE").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 160) {
+				document.getElementById("rewardE").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 161) {
+				document.getElementById("rewardF").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 190) {
+				document.getElementById("rewardF").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 191) {
+				document.getElementById("rewardG").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 220) {
+				document.getElementById("rewardG").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 221) {
+				document.getElementById("rewardH").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 240) {
+				document.getElementById("rewardH").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 241) {
+				document.getElementById("rewardI").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 260) {
+				document.getElementById("rewardI").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 261) {
+				document.getElementById("rewardJ").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 290) {
+				document.getElementById("rewardJ").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 291) {
+				document.getElementById("rewardK").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 320) {
+				document.getElementById("rewardK").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 321) {
+				document.getElementById("rewardL").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 350) {
+				document.getElementById("rewardL").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 351) {
+				document.getElementById("rewardM").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 390) {
+				document.getElementById("rewardM").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 391) {
+				document.getElementById("rewardN").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 420) {
+				document.getElementById("rewardN").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 421) {
+				document.getElementById("rewardO").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 440) {
+				document.getElementById("rewardO").classList.add("hidden");
+			}
+
+			if(this.clicksForCalc === 441) {
+				document.getElementById("rewardP").classList.remove("hidden");
+			}
+
+			if(this.clicksForCalc === 600) {
+				document.getElementById("rewardP").classList.add("hidden");
+			}
+
 		},
 
 	},
 });
-
-
-let cookie = document.getElementById("cookie");
-let counter = document.getElementById("counter");
-let points = 0;
-
-
-let clicker = function(e) {
-  e.preventDefault; // default behaviour chanceled
-
-  points = points + 1;
-
-  // set counter
-  counter.innerHTML = points;
-
-  if(points === 1) {
-    document.getElementById("rewardA").classList.remove("hidden");
-  }
-
-  if(points === 19) {
-    document.getElementById("rewardA").classList.add("hidden");
-  }
-
-  if(points === 20) {
-    document.getElementById("rewardB").classList.remove("hidden");
-  }
-
-  if(points === 29) {
-    document.getElementById("rewardB").classList.add("hidden");
-  }
-
-  // remove class
-  cookie.classList.remove("bounce");
-
-  // magic...
-  void cookie.offsetWidth;
-
-  // add class
-  cookie.classList.add("bounce");
-}
-
-cookie.addEventListener("click", clicker);

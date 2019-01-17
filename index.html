@@ -2,27 +2,42 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="css/clickingspeedtest.css"/>
 
 		<title>speedometer</title>
+
 	</head>
-
+<a href="https://logrinto.github.io/IAD2017.clicker-game/"><img src="https://img.icons8.com/ios/50/000000/blackberry-app-world-filled.png" style="padding-top: 2rem; padding-left:2rem;"></a>
 	<body class="fullscreen" style="background-image: url(images/street_background.jpg)">
+		<div class="container text-center" style="padding-top: 3rem">
 		<div id="app">
-
-			<div class="container text-center" style="padding-top: 3rem">
 				<div class="row">
 					<div class="col-sm">
 						<canvas id="gaugeCanvas" ></canvas>
 
-						<div class="clickingArea" @click="handleClick()" >
-							<h2>click me!</h2>
-							    <div id="cookie">
-							    <div class="hidden reward" id="rewardA"><h2>hopp</h2></div></div>
+						<div id="cookie" @click="handleClick()">
+							<div class="reward" id="reward0"><h2>click me!</h2></div>
+							<div class="hidden" id="rewardA" ><h2>hopp</h2></div>
+							<div class="hidden" id="rewardB" ><h2>hopp</h2></div>
+							<div class="hidden" id="rewardC" ><h2>mach weiter!</h2></div>
+							<div class="hidden" id="rewardD" ><h2>yeaaahhh</h2></div>
+							<div class="hidden" id="rewardE" ><h2>bravo</h2></div>
+							<div class="hidden" id="rewardF" ><h2>WOW</h2></div>
+							<div class="hidden" id="rewardG" ><h2>du schaffst das!</h2></div>
+							<div class="hidden" id="rewardH" ><h2>ja?</h2></div>
+							<div class="hidden" id="rewardI" ><h2>mehr kannst du nicht?</h2></div>
+							<div class="hidden" id="rewardJ" ><h2>schneller!</h2></div>
+							<div class="hidden" id="rewardK" ><h2>müde?</h2></div>
+							<div class="hidden" id="rewardL" ><h2>zu langsam...</h2></div>
+							<div class="hidden" id="rewardM" ><h2>...gähn...</h2></div>
+							<div class="hidden" id="rewardN" ><h2>ah, ich gehe raus.</h2></div>
+							<div class="hidden" id="rewardO" ><h2>machs gut...</h2></div>
+							<div class="hidden" id="rewardP" ><h2>...</h2></div>
 						</div>
+						<script src="main.js"></script>
 
 						<table class="stats" style="color: white">
 							<tr>
@@ -32,6 +47,7 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
